@@ -1,17 +1,7 @@
 from django.shortcuts import render
+from .models import Challenge
 from django.http import HttpResponse
 
-class Challenge:
-    def __init__(self, inspiration, date):
-        self.inspiration = inspiration
-        self.date = date
-
-challenges = [
-    Challenge('My Father', '8/22/2021'),
-    Challenge('Once in a Lifetime', '8/21/2021'),
-    Challenge('My Mother', '8/20/2021'),
-    Challenge('My Wife', '8/19/2021')
-]
 
 def home(request):
     return render(request, 'home.html')
@@ -20,4 +10,9 @@ def about(request):
     return render(request, 'about.html')
 
 def challenges_index(request):
+    challenges = Challenge.objects.all()
     return render(request, 'challenges/index.html', { 'challenges': challenges })
+
+def challenges_detail(request, challenge_id):
+    challenge = Challenge.objects.get(id=challenge_id)
+    return render(request, 'challenges/detail.html', { 'challenge': challenge })
