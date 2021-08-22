@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/challenge-index.css' %}"/>
+{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+    <h1>People, Places and Things Challenge Log:</h1>
+    <img src="" alt="" />
+    <img src="" alt="" />
+    <img src="" alt="" />
+    <img src="" alt="" />
+</section>
+
+<section class="card-container">
+    {% for challenge in challenges %}
+        <div class="card">
+            <div class="card-content">
+                <div class="card-img-container">
+                <img 
+                    src="" 
+                    alt=""
+                >
+                </div>
+                <h2 class="card-title">My PPT Challenge from {{ challenge.date }}</h2>
+                <h2>was inspired by {{ challenge.inspiration }}</h2>
+            </div>
+        </div>
+    {% endfor %}
+</section>
+
+{% endblock %}
