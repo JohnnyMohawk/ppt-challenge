@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Challenge
 from django.http import HttpResponse
 
@@ -16,3 +17,16 @@ def challenges_index(request):
 def challenges_detail(request, challenge_id):
     challenge = Challenge.objects.get(id=challenge_id)
     return render(request, 'challenges/detail.html', { 'challenge': challenge })
+
+class ChallengeCreate(CreateView):
+    model = Challenge
+    fields = '__all__'
+    success_url = '/challenges/'
+
+class ChallengeUpdate(UpdateView):
+    model = Challenge
+    fields = ['inspiration', 'date']
+
+class ChallengeDelete(DeleteView):
+    model = Challenge
+    success_url = '/challenges/'

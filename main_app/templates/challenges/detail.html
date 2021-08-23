@@ -21,6 +21,10 @@
     <div class="cat-details">
         <h1>My PPT Challenge from {{ challenge.date }}</h1>
         <p>Inspiration: {{ challenge.inspiration }}</p>
+        <div class="cat-actions">
+            <a href="{% url 'challenges_update' challenge.id %}" class="btn warn">Edit</a>
+            <a href="{% url 'challenges_delete' challenge.id %}" class="btn danger">Delete</a>
+        </div>
     </div>
 </section>
 
