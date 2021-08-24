@@ -27,5 +27,49 @@
         </div>
     </div>
 </section>
+<div class="feedings-toy-container">
+  <section class="feedings">
+    <div class="subsection-title">
+      <h2>People</h2>
+      <img 
+        src="" 
+        alt=""
+      />
+      <img 
+        src=""
+        alt=""
+      />
+      <img 
+        src="" 
+        alt=""
+      />
+    </div>
+
+    <h3>Complete People Challenge</h3>
+    <form
+      method="post" 
+      class="subsection-section"
+    >
+      {% csrf_token %}
+      {{ people_form.as_p }}
+      <button type="submit" class="btn submit">Add Person</button>
+    </form>
+    <h3>Today's People:</h3>
+
+    <table>
+      <thead>
+        <tr><th>Person Type</th><th>Name</th></tr>
+      </thead>
+      <tbody>
+        {% for person in challenge.people_set.all %}
+          <tr>
+            <td>{{person.get_type_display}}</td>
+            <td>{{person.name}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+</div>
 
 {% endblock %}
