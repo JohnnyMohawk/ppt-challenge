@@ -6,6 +6,10 @@
     justify-content: center;
 }
 
+/* .cat-container > .cat-details {
+    margin-left: 100px;
+} */
+
 .cat-img {
     width: 75%;
     max-width: 350px;
@@ -70,9 +74,13 @@
     width: 100%;
 }
 
+.cat-details {
+    margin: auto;
+}
+
 .cat-details h1 {
     font-size: 36px;
-    margin: 15px 0 3px;
+    /* margin: 15px 0 3px; */
 }
 
 .cat-details h2 {
@@ -100,6 +108,7 @@
     flex-direction: column;
     justify-content: center;
     margin-bottom: 20px;
+    margin: auto;
 }
 
 .subsection-title img {
@@ -110,6 +119,12 @@
 .subsection-title img:first-of-type {
     margin-left: 16px;
 }
+
+/* .feedings {
+    flex-direction: row;
+    justify-content: center;
+    background-color: red;
+} */
 
 .feedings h2,
 .toys h2 {
