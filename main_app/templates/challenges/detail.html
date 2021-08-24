@@ -27,6 +27,7 @@
         </div>
     </div>
 </section>
+<div class="centering-div">
 <div class="feedings-toy-container">
   <section class="feedings">
     <div class="subsection-title">
@@ -44,7 +45,6 @@
         alt=""
       />
     </div>
-
     <h3>Complete People Challenge</h3>
     <form
       action="{% url 'add_people' challenge.id %}" 
@@ -178,7 +178,7 @@
       <p class="subsection-section">You have not yet started the Things Challenge for {{challenge.date}}</p>
     {% endif %}
   </section>
-
+</div>
 </div>
 
 {% endblock %}

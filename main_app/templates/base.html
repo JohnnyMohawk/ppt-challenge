@@ -13,19 +13,19 @@
 </head>
 <body>
     <header>
-        <div class="header-logo-container">
-            <a href="/">
-                <img 
-                src="" 
-                alt=""
-                >
-            </a>
-        </div>
+        <a href="/">
+            <img 
+            src="" 
+            alt=""
+            >
+        </a>
+        {% comment %} <div class="header-logo-container">
+        </div> {% endcomment %}
         <nav>
             <ul>
-                <li><a href="{% url 'challenges_index' %}">Challenge Logs</a></li>
                 <li><a href="{% url 'challenges_create' %}">New Challenge</a></li>
-                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'challenges_index' %}">Challenge Logs</a></li>
+                <li><a href="{% url 'about' %}">About PPT Challenge</a></li>
             </ul>
         </nav>
     </header>
