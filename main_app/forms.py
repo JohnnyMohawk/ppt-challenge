@@ -1,5 +1,5 @@
 from django.forms import ModelForm
-from .models import People, Place
+from .models import People, Place, Thing
 
 class PeopleForm(ModelForm):
     class Meta:
@@ -11,3 +11,7 @@ class PlaceForm(ModelForm):
         model = Place
         fields = ['type', 'name']
 
+class ThingForm(ModelForm):
+    class Meta:
+        model = Thing
+        fields = ['type', 'name']

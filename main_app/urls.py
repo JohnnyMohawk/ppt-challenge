@@ -11,4 +11,5 @@ urlpatterns = [
     path('challenges/<int:pk>/delete/', views.ChallengeDelete.as_view(), name='challenges_delete'),
     path('challenges/<int:challenge_id>/add_people/', views.add_people, name='add_people'),
     path('challenges/<int:challenge_id>/add_place/', views.add_place, name='add_place'),
+    path('challenges/<int:challenge_id>/add_thing/', views.add_thing, name='add_thing'),
 ]

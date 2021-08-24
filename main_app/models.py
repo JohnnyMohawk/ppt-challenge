@@ -13,6 +13,14 @@ PLACE_TYPES = (
     ('G', 'Place I am grateful for:'),
 )
 
+THING_TYPES = (
+    ('L', 'Something I want to learn about:'),
+    ('N', 'Something I need:'),
+    ('W', 'Something I want:'),
+    ('G', 'Something I am grateful for:'),
+    ('V', 'Something I need to vent about:'),
+)
+
 # Create your models here.
 class Challenge(models.Model):
     inspiration = models.CharField(max_length=100)
@@ -46,6 +54,19 @@ class Place(models.Model):
         max_length=1,
         choices=PLACE_TYPES,
         default=PLACE_TYPES[0][0]
+    )
+    name = models.CharField(max_length=50)
+    challenge = models.ForeignKey(Challenge, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"{self.get_type_display()}"
+        # return f"{self.get_type_display()} on {self.date}"
+
+class Thing(models.Model):
+    type = models.CharField(
+        max_length=1,
+        choices=THING_TYPES,
+        default=THING_TYPES[0][0]
     )
     name = models.CharField(max_length=50)
     challenge = models.ForeignKey(Challenge, on_delete=models.CASCADE)

@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Challenge
-from .forms import PeopleForm, PlaceForm
+from .forms import PeopleForm, PlaceForm, ThingForm
 from django.http import HttpResponse
 
 
@@ -17,12 +17,14 @@ def challenges_index(request):
 
 def challenges_detail(request, challenge_id):
     challenge = Challenge.objects.get(id=challenge_id)
-    people_form = PeopleForm
-    place_form = PlaceForm
+    people_form = PeopleForm()
+    place_form = PlaceForm()
+    thing_form = ThingForm()
     return render(request, 'challenges/detail.html', { 
         'challenge': challenge, 
         'people_form': people_form,
-        'place_form': place_form })
+        'place_form': place_form,
+        'thing_form': thing_form })
 
 class ChallengeCreate(CreateView):
     model = Challenge
@@ -51,4 +53,12 @@ def add_place(request, challenge_id):
         new_place = form.save(commit=False)
         new_place.challenge_id = challenge_id
         new_place.save()
+    return redirect('challenges_detail', challenge_id=challenge_id)
+
+def add_thing(request, challenge_id):
+    form = ThingForm(request.POST)
+    if form.is_valid():
+        new_thing = form.save(commit=False)
+        new_thing.challenge_id = challenge_id
+        new_thing.save()
     return redirect('challenges_detail', challenge_id=challenge_id)

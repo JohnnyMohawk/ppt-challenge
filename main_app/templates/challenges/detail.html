@@ -129,6 +129,55 @@
       <p class="subsection-section">You have not yet started the Places Challenge for {{challenge.date}}</p>
     {% endif %}
   </section>
+</div>
+
+<div class="feedings-toy-container">
+  <section class="feedings">
+    <div class="subsection-title">
+      <h2>Things</h2>
+      <img 
+        src="" 
+        alt=""
+      />
+      <img 
+        src=""
+        alt=""
+      />
+      <img 
+        src="" 
+        alt=""
+      />
+    </div>
+    
+    <h3>Complete Things Challenge</h3>
+    <form
+      action="{% url 'add_thing' challenge.id %}"
+      method="post" 
+      class="subsection-section"
+    >
+      {% csrf_token %}
+      {{ thing_form.as_p }}
+      <button type="submit" class="btn submit">Add Thing</button>
+    </form>
+    <h3>Today's Things</h3>
+    {% if challenge.thing_set.all.count %}
+    <table>
+      <thead>
+        <tr><th>Thing Type</th><th>Thing Name</th></tr>
+      </thead>
+      <tbody>
+        {% for thing in challenge.thing_set.all %}
+          <tr>
+            <td>{{thing.get_type_display}}</td>
+            <td>{{thing.name}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+      <p class="subsection-section">You have not yet started the Things Challenge for {{challenge.date}}</p>
+    {% endif %}
+  </section>
 
 </div>
 
