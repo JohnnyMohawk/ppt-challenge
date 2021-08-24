@@ -51,6 +51,13 @@
       method="post" 
       class="subsection-section"
     >
+
+      {% if challenge.done_peeps_today %}
+        <p class="fed">You completed the People section of the challenge for {{challenge.date}}.</p>
+      {% else %}
+        <p class="unfed">You have not completed the People section for {{challenge.date}}</p>
+        <p class="unfed">Add more people to your list!</p>
+      {% endif %}
       {% csrf_token %}
       {{ people_form.as_p }}
       <button type="submit" class="btn submit">Add Person</button>
@@ -71,9 +78,58 @@
       </tbody>
     </table>
     {% else %}
-      <p class="subsection-section">Your People Challenge for {{challenge.date}} is incomplete</p>
+      <p class="subsection-section">You have not yet started the People Challenge for {{challenge.date}}</p>
     {% endif %}
   </section>
+
+<div class="feedings-toy-container">
+  <section class="feedings">
+    <div class="subsection-title">
+      <h2>Places</h2>
+      <img 
+        src="" 
+        alt=""
+      />
+      <img 
+        src=""
+        alt=""
+      />
+      <img 
+        src="" 
+        alt=""
+      />
+    </div>
+    
+    <h3>Complete Places Challenge</h3>
+    <form
+      action="{% url 'add_place' challenge.id %}"
+      method="post" 
+      class="subsection-section"
+    >
+      {% csrf_token %}
+      {{ place_form.as_p }}
+      <button type="submit" class="btn submit">Add Place</button>
+    </form>
+    <h3>Today's Places</h3>
+    {% if challenge.place_set.all.count %}
+    <table>
+      <thead>
+        <tr><th>Place Type</th><th>Place Name</th></tr>
+      </thead>
+      <tbody>
+        {% for place in challenge.place_set.all %}
+          <tr>
+            <td>{{place.get_type_display}}</td>
+            <td>{{place.name}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+      <p class="subsection-section">You have not yet started the Places Challenge for {{challenge.date}}</p>
+    {% endif %}
+  </section>
+
 </div>
 
 {% endblock %}
