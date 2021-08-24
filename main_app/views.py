@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Challenge
 from .forms import PeopleForm
@@ -32,3 +32,11 @@ class ChallengeUpdate(UpdateView):
 class ChallengeDelete(DeleteView):
     model = Challenge
     success_url = '/challenges/'
+
+def add_people(request, challenge_id):
+    form = PeopleForm(request.POST)
+    if form.is_valid():
+        new_people = form.save(commit=False)
+        new_people.challenge_id = challenge_id
+        new_people.save()
+    return redirect('challenges_detail', challenge_id=challenge_id)
