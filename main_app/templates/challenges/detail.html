@@ -106,6 +106,13 @@
       method="post" 
       class="subsection-section"
     >
+
+       {% if challenge.done_places_today %}
+        <p class="fed">You completed the Places section of the challenge for {{challenge.date}}.</p>
+      {% else %}
+        <p class="unfed">You have not completed the Places section for {{challenge.date}}</p>
+        <p class="unfed">Add more places to your list!</p>
+      {% endif %}
       {% csrf_token %}
       {{ place_form.as_p }}
       <button type="submit" class="btn submit">Add Place</button>
@@ -155,6 +162,12 @@
       method="post" 
       class="subsection-section"
     >
+       {% if challenge.done_things_today %}
+        <p class="fed">You completed the Things section of the challenge for {{challenge.date}}.</p>
+      {% else %}
+        <p class="unfed">You have not completed the Things section for {{challenge.date}}</p>
+        <p class="unfed">Add something to your list!</p>
+      {% endif %}
       {% csrf_token %}
       {{ thing_form.as_p }}
       <button type="submit" class="btn submit">Add Thing</button>

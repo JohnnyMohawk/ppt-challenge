@@ -108,7 +108,7 @@
     background-color: rgb(238, 238, 238, .7);
     border-radius: 6px;
     padding: 10px;
-    box-shadow: 5px 5px 6px -1px #AAA;
+    box-shadow: 10px 10px 12px -1px #AAA;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -208,6 +208,10 @@
     margin-bottom: 10px;
 }
 
+/* .feedings-toy-container > section {
+    width: 42.5%;
+} */
+
 @media only screen and (min-width: 768px) {
     .cat-container {
         flex-direction: row;
@@ -228,7 +232,7 @@
     }
 
     .feedings-toy-container > section {
-        width: 50%;
+        width: 42.5%;
         /* justify-content: center;
         align-items: center; */
     }

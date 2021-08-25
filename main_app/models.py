@@ -37,6 +37,12 @@ class Challenge(models.Model):
     def done_peeps_today(self):
         return self.people_set.count() >= len(PEOPLE_TYPES)
 
+    def done_places_today(self):
+        return self.place_set.count() >= len(PLACE_TYPES)
+
+    def done_things_today(self):
+        return self.thing_set.count() >= len(THING_TYPES)
+
 class People(models.Model):
     type = models.CharField(
         max_length=1,
