@@ -7,12 +7,13 @@ body {
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;
     min-height: 100vh;
+    background-color: rgb(84, 140, 168);
 }
 
 header {
     width: 100%;
-    background: rgba(104, 197, 248, .9);
-    border-bottom: rgb(36, 116, 248) solid 2px;
+    background: rgb(71, 96, 114, .7);
+    border-bottom: rgb(51, 66, 87) solid 2px;
 }
 
 nav {
@@ -31,8 +32,9 @@ main {
 
 nav a {
     text-decoration: none;
-    color: #101010;
+    color: rgb(238, 238, 238);
     font-weight: 600;
+    font-size: large;
 }
 
 nav a:hover {
@@ -171,7 +173,7 @@ nav li {
 
     @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
         header {
-            background: rgba(104, 197, 248, .7);
+            background: rgb(71, 96, 114, .7);
             -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
         }
@@ -191,8 +193,8 @@ nav li {
     nav,
     .header-logo-container {
         margin: 0;
-        background: rgba(104, 197, 248, .9);
-        border: rgb(36, 116, 248) solid 2px;
+        background: rgb(71, 96, 114);
+        border: rgb(51, 66, 87) solid 2px;
         border-radius: 18px;
     }
 
@@ -216,7 +218,7 @@ nav li {
     
         nav,
         .header-logo-container {
-            background: rgba(104, 197, 248, .6);
+            background: rgb(71, 96, 114, .7);
             -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
         }

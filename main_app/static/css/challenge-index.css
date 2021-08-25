@@ -5,21 +5,36 @@
     flex-wrap: wrap;
 }
 
+h1 {
+    color: rgb(51, 66, 87);
+}
+
+.page-header {
+    margin-left: 135px;
+    /* margin-right: auto; */
+}
+
 .card {
-    width: 275px;
+    width: 325px;
     margin: 10px;
-    border: rgb(36, 116, 248) solid 2px;
-    box-shadow: 5px 5px 6px -1px #AAA;
+    background-color: rgb(238, 238, 238);
+    border: rgb(71, 96, 114) solid 2px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 12px -1px #AAA;
+}
+
+.brain-gears {
+    margin-left: -40px;
 }
 
 .card-content {
-    padding: 10px;
-    width: 255px;
+    padding: 20px;
+    width: 305px;
 }
 
 .card > a {
     text-decoration: none;
-    color: #111;
+    color: rgb(51, 66, 87);
 }
 
 .card h2 {
