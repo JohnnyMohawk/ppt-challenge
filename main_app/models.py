@@ -43,6 +43,9 @@ class Challenge(models.Model):
     def done_things_today(self):
         return self.thing_set.count() >= len(THING_TYPES)
 
+    class Meta:
+        ordering = ['-date']
+
 class People(models.Model):
     type = models.CharField(
         max_length=1,

@@ -27,6 +27,70 @@
         </div>
     </div>
 </section>
+
+{% if challenge.done_peeps_today and challenge.done_places_today and challenge.done_things_today %}
+
+<div class="challenge-cards-container">
+    <section class="challenges">
+        <div class="subsection-title">
+        <h2>Today's People, Places & Things</h2>
+        <img 
+            src="" 
+            alt=""
+        />
+        <img 
+            src=""
+            alt=""
+        />
+        <img 
+            src="" 
+            alt=""
+        />
+        </div>
+            <table>
+                <thead>
+                    <tr><th>Person Type</th><th>Person Name</th></tr>
+                </thead>
+                <tbody>
+                    {% for person in challenge.people_set.all %}
+                    <tr>
+                        <td>{{person.get_type_display}}</td>
+                        <td>{{person.name}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr><th>Place Type</th><th>Place Name</th></tr>
+                </thead>
+                <tbody>
+                    {% for place in challenge.place_set.all %}
+                    <tr>
+                        <td>{{place.get_type_display}}</td>
+                        <td>{{place.name}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr><th>Thing Type</th><th>Thing Name</th></tr>
+                </thead>
+                <tbody>
+                    {% for thing in challenge.thing_set.all %}
+                    <tr>
+                        <td>{{thing.get_type_display}}</td>
+                        <td>{{thing.name}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+    </section>
+</div>
+
+{% else %}
+
 <div class="challenge-cards-container">
     <section class="challenges">
         <div class="subsection-title">
@@ -189,5 +253,6 @@
         {% endif %}
     </section>
 </div>
+{% endif %}
 
 {% endblock %}
