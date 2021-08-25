@@ -2,6 +2,9 @@
 {% load static %}
 
 {% block head %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 <link 
     rel="stylesheet" 
     type="text/css" 
@@ -20,7 +23,7 @@
     </div>
     <div class="challenge-details">
         <h1>My PPT Challenge from {{ challenge.date }}</h1>
-        <p>Inspiration: {{ challenge.inspiration }}</p>
+        <h2>Inspiration: {{ challenge.inspiration }}</h2>
         <div class="challenge-actions">
             <a href="{% url 'challenges_update' challenge.id %}" class="btn warn">Edit</a>
             <a href="{% url 'challenges_delete' challenge.id %}" class="btn danger">Delete</a>
@@ -108,7 +111,7 @@
             alt=""
         />
         </div>
-        <h3>Complete People Challenge</h3>
+        <h3>Complete the People Section</h3>
         <form
             action="{% url 'add_people' challenge.id %}" 
             method="post" 
@@ -162,7 +165,7 @@
         />
         </div>
         
-        <h3>Complete Places Challenge</h3>
+        <h3>Complete the Places Section</h3>
         <form
         action="{% url 'add_place' challenge.id %}"
         method="post" 
@@ -216,7 +219,7 @@
             alt=""
         />
         </div>
-        <h3>Complete Things Challenge</h3>
+        <h3>Complete the Things Section</h3>
         <form
             action="{% url 'add_thing' challenge.id %}"
             method="post" 

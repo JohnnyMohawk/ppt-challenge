@@ -5,6 +5,11 @@
     justify-content: center;
 }
 
+h1,
+h2 {
+    font-family: 'Abril Fatface', cursive;
+}
+
 .challenge-img {
     width: 75%;
     max-width: 350px;
@@ -146,10 +151,6 @@ th {
 .challenges tr:nth-child(even) {
     background-color: #f3f3fd;
 }
-
-/* .all-data {
-    margin: auto;
-} */
 
 @media only screen and (min-width: 768px) {
     .challenge-container {
