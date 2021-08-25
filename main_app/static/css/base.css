@@ -117,6 +117,15 @@ nav li {
     margin-left: 20px;
 }
 
+.about-card {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgb(238, 238, 238, .5);
+    border: rgb(51, 66, 87) solid 2px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 12px -1px #AAA;
+}
+
 @media only screen and (min-width: 768px) {
     header {
         position: sticky;

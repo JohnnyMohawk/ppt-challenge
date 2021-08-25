@@ -23,9 +23,10 @@
 .feedings-toy-container {
     /* display: flex; */
     /* flex-direction: column; */
-    padding-top: 40px;
+    /* padding-top: 40px; */
     align-items: center;
     justify-content: center;
+    margin: 50px;
 }
 
 .subsection-title {
@@ -97,10 +98,12 @@
     margin: 5px 0;
 }
 
+
 .feedings-toy-container > section {
     width: 80%;
     min-width: 315px;
-    border: rgb(36, 116, 248) solid 2px;
+    border: rgb(71, 96, 114) solid 2px;
+    background-color: rgb(238, 238, 238);
     border-radius: 6px;
     padding: 10px;
     box-shadow: 5px 5px 6px -1px #AAA;
@@ -126,16 +129,22 @@
     background-color: red;
 } */
 
+/* h1 {
+    color: rgb(51, 66, 87);
+} */
+
 .feedings h2,
 .toys h2 {
     font-size: 32px;
     margin: 0;
+    color: rgb(51, 66, 87);
 }
 
 .feedings h3,
 .toys h3 {
     font-size: 24px;
     margin: 10px 0;
+    color: rgb(51, 66, 87);
 }
 
 .subsection-section p,
@@ -164,7 +173,8 @@
 .feedings th {
     font-size: 1.1rem;
     padding: 5px 5px 0;
-    border-bottom: rgb(36, 116, 248) solid 2px;;
+    border-bottom: rgb(71, 96, 114) solid 2px;
+    color: rgb(51, 66, 87);
 }
 
 .feedings tr:nth-child(even) {

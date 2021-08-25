@@ -34,7 +34,7 @@ def challenges_detail(request, challenge_id):
 
 class ChallengeCreate(LoginRequiredMixin, CreateView):
     model = Challenge
-    fields = '__all__'
+    fields = ['inspiration', 'date']
     success_url = '/challenges/'
 
     def form_valid(self, form):
