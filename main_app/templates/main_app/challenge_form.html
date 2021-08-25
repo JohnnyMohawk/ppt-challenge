@@ -2,7 +2,16 @@
 {% load static %}
 
 {% block head %}
+<link 
+    href="https://cdn.jsdelivr.net/npm/mc-datepicker/dist/mc-calendar.min.css" 
+    rel="stylesheet" 
+/>
+<script 
+    src="https://cdn.jsdelivr.net/npm/mc-datepicker/dist/mc-calendar.min.js"
+>
+</script>
 <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}"/>
+<script defer src="{% static 'js/new-challenge.js' %}"></script>
 {% endblock %}
 
 {% block content %}
@@ -15,7 +24,7 @@
     {% endif %}
     <img src="" alt=""/>
 </div>
-<form action="" method="post" class="form-container">
+<form action="" method="post" class="form-container" autocomplete="off">
     {% csrf_token %}
     <table>
         {{ form.as_table }}

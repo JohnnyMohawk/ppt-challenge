@@ -49,6 +49,7 @@
             action="{% url 'add_people' challenge.id %}" 
             method="post" 
             class="subsection-section"
+            autocomplete="off"
         >
             {% if challenge.done_peeps_today %}
                 <p class="complete">You completed the People section of the challenge for {{challenge.date}}.</p>
@@ -102,6 +103,7 @@
         action="{% url 'add_place' challenge.id %}"
         method="post" 
         class="subsection-section"
+        autocomplete="off"
         >
             {% if challenge.done_places_today %}
                 <p class="complete">You completed the Places section of the challenge for {{challenge.date}}.</p>
@@ -155,6 +157,7 @@
             action="{% url 'add_thing' challenge.id %}"
             method="post" 
             class="subsection-section"
+            autocomplete="off"
         >
             {% if challenge.done_things_today %}
                 <p class="complete">You completed the Things section of the challenge for {{challenge.date}}.</p>
