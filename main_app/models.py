@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from django.contrib.auth.models import User
 
 PEOPLE_TYPES = (
     ('L', 'Person to learn about:'),
@@ -25,6 +26,7 @@ THING_TYPES = (
 class Challenge(models.Model):
     inspiration = models.CharField(max_length=100)
     date = models.DateField('Challenge Date')
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return str(self.date)

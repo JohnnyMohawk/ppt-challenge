@@ -15,17 +15,24 @@
     <header>
         <a href="/">
             <img 
-            src="" 
-            alt=""
+            src="{% static 'images/people-places-things-logo-sml.png' %}" 
+            alt="People places and things logo"
             >
         </a>
         {% comment %} <div class="header-logo-container">
         </div> {% endcomment %}
         <nav>
             <ul>
-                <li><a href="{% url 'challenges_create' %}">New Challenge</a></li>
-                <li><a href="{% url 'challenges_index' %}">Challenge Logs</a></li>
-                <li><a href="{% url 'about' %}">About PPT Challenge</a></li>
+                {% if user.is_authenticated %}
+                    <li><a href="{% url 'challenges_create' %}">New Challenge</a></li>
+                    <li><a href="{% url 'challenges_index' %}">Challenge Logs</a></li>
+                    <li><a href="{% url 'about' %}">About PPT Challenge</a></li>
+                    <li><a href="{% url 'logout' %}">Log Out</a></li>
+                {% else %}
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'home' %}">Login</a></li>
+                    <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                {% endif %}
             </ul>
         </nav>
     </header>
