@@ -1,6 +1,6 @@
 <img src="" width=100% height=auto>
 
-The People, Places & Things Challenge is a Django application designed to increase the users curiousity, network and foster an attitude of gratitude! 
+The People, Places & Things Challenge is a full-stack Django application designed to increase the users curiousity, network and foster an attitude of gratitude! 
 
 ## About
 

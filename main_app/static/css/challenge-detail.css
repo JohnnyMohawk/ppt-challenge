@@ -119,6 +119,7 @@
     text-align: left;
     border-collapse: collapse;
     margin: 0 8px;
+    table-layout: fixed;
 }
 
 .challenges td {
@@ -130,6 +131,16 @@
     padding: 5px 5px 0;
     border-bottom: rgb(71, 96, 114) solid 2px;
     color: rgb(51, 66, 87);
+}
+
+.table-header {
+    background-color: #f3f3fd44;
+    border-bottom: rgb(84, 113, 135) solid 2px;
+    
+}
+
+th {
+    padding: 8px 5px;
 }
 
 .challenges tr:nth-child(even) {

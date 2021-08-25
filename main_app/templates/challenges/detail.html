@@ -32,24 +32,24 @@
 
 <div class="challenge-cards-container">
     <section class="challenges">
-        <div class="subsection-title">
         <h2>Today's People, Places & Things</h2>
+        <div class="subsection-title">
         <img 
-            src="" 
-            alt=""
+            src="{% static 'images/people.png' %}" 
+            alt="People logo"
         />
         <img 
-            src=""
-            alt=""
+            src="{% static 'images/places.png' %}"
+            alt="Places logo"
         />
         <img 
-            src="" 
-            alt=""
+            src="{% static 'images/things.png' %}" 
+            alt="Things logo"
         />
         </div>
             <table>
                 <thead>
-                    <tr><th>Person Type</th><th>Person Name</th></tr>
+                    <tr class="table-header"><th class="ppt">People:</th><th></th></tr>
                 </thead>
                 <tbody>
                     {% for person in challenge.people_set.all %}
@@ -62,7 +62,7 @@
             </table>
             <table>
                 <thead>
-                    <tr><th>Place Type</th><th>Place Name</th></tr>
+                    <tr class="table-header"><th class="ppt">Places:</th><th></th></tr>
                 </thead>
                 <tbody>
                     {% for place in challenge.place_set.all %}
@@ -75,7 +75,7 @@
             </table>
             <table>
                 <thead>
-                    <tr><th>Thing Type</th><th>Thing Name</th></tr>
+                    <tr class="table-header"><th class="ppt">Things:</th><th></th></tr>
                 </thead>
                 <tbody>
                     {% for thing in challenge.thing_set.all %}
