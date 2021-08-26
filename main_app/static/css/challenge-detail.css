@@ -98,7 +98,7 @@ h2 {
 .challenges h2 {
     font-size: 32px;
     margin: 0;
-    color: rgb(51, 66, 87);
+    color: black;
 }
 
 .challenges h3 {
@@ -139,7 +139,7 @@ h2 {
 }
 
 .table-header {
-    background-color: #f3f3fd44;
+    background-color: #a3a3aa86;
     border-bottom: rgb(84, 113, 135) solid 2px;
     
 }

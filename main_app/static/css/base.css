@@ -126,6 +126,10 @@ nav li {
     box-shadow: 10px 10px 12px -1px #AAA;
 }
 
+.about-h1 {
+    font-family: 'Abril Fatface', cursive;
+}
+
 @media only screen and (min-width: 768px) {
     header {
         position: sticky;

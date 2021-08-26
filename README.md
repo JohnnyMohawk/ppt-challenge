@@ -15,13 +15,13 @@ Let’s get started!
 
 ## Screenshots
 
-<img src="" width=100% height=auto>
+<img src="main_app/static/images/login-ppt-ss.png" width=100% height=auto>
 
-<img src="" width=100% height=auto>
+<img src="main_app/static/images/challenge-index-ss.png" width=100% height=auto>
 
-<img src="" width=100% height=auto>
+<img src="main_app/static/images/empty-ppt-ss.png" width=100% height=auto>
 
-<img src="" width=100% height=auto>
+<img src="main_app/static/images/complete-challenge-table-ss.png" width=100% height=auto>
 
 <img src="" width=100% height=auto>
 
@@ -49,15 +49,11 @@ The People, Places & Things app is deployed [HERE]()
 
 ## Wireframe
 
-<img src="" width=100% height=auto alt="wireframe">
+<img src="main_app/static/images/ppt-wireframe.png" width=100% height=auto alt="wireframe">
 
 ## ERD
 
-<img src="" width=100% height=auto alt="erd">
-
-## Component Map
-
-<img src="" width=100% height=auto alt="component map">
+<img src="main_app/static/images/ppt-erd-ss.png" width=100% height=auto alt="erd">
 
 ## User Stories
 
