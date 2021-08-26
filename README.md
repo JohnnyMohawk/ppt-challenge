@@ -1,4 +1,4 @@
-<img src="" width=100% height=auto>
+<img src="main-app/../main_app/static/images/people-places-things-banner.png" width=100% height=auto>
 
 The People, Places & Things Challenge is a full-stack Django application designed to increase the users curiousity, network and foster an attitude of gratitude! 
 
@@ -72,4 +72,4 @@ The People, Places & Things app is deployed [HERE]()
 * AAU, I want to be able to search through all of my People, Places & Things daily challenges based on their individual properties.
 * AAU, I want a dark mode to reduce eyestrain.
 
-<img src="" width=100% height=auto>
+<img src="main-app/../main_app/static/images/people-places-things-banner.png" width=100% height=auto>
