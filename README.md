@@ -13,6 +13,10 @@ Each day a user decides to do a PPT challenge, they will simply be asked for a b
 
 Let’s get started!
 
+## Getting Started
+
+The People, Places & Things app is deployed [HERE](https://ppt-challenge.herokuapp.com/)
+
 ## Screenshots
 
 <img src="main_app/static/images/login-ppt-ss.png" width=100% height=auto>
@@ -22,10 +26,6 @@ Let’s get started!
 <img src="main_app/static/images/empty-ppt-ss.png" width=100% height=auto>
 
 <img src="main_app/static/images/complete-challenge-table-ss.png" width=100% height=auto>
-
-## Getting Started
-
-The People, Places & Things app is deployed [HERE](https://ppt-challenge.herokuapp.com/)
 
 ## Built With
 
