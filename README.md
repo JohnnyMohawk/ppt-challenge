@@ -43,6 +43,7 @@ The People, Places & Things app is deployed [HERE](https://ppt-challenge.herokua
 * [JavaScript](https://www.javascript.com/)
 * [MCDatepicker](https://www.npmjs.com/package/mc-datepicker)
 * [Google Fonts](https://fonts.google.com/)
+* [Heroku](https://www.heroku.com/)
 
 ## Author
 
