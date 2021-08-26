@@ -10,10 +10,19 @@ body {
     background-color: rgb(84, 140, 168);
 }
 
+section .home-logo {
+    margin-top: 20px;
+}
+
+/* .login {
+    margin-top: 500px;
+} */
+
 header {
     width: 100%;
     background: rgb(71, 96, 114, .7);
     border-bottom: rgb(51, 66, 87) solid 2px;
+    margin-bottom: 80px;
 }
 
 nav {
@@ -130,6 +139,25 @@ nav li {
     font-family: 'Abril Fatface', cursive;
 }
 
+#home-form {
+    width: 80%;
+    min-width: 315px;
+    border: rgb(71, 96, 114) solid 2px;
+    background-color: rgb(238, 238, 238, .7);
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: 10px 10px 12px -1px #AAA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+#home-form h1 {
+    font-family: 'Abril Fatface', cursive;
+}
+
 @media only screen and (min-width: 768px) {
     header {
         position: sticky;
@@ -165,7 +193,12 @@ nav li {
         padding: 3px 15px 1px 15px;
         width: 213px;
         height: 23px;
+        /* margin: 20px; */
     }
+
+    /* .home-logo {
+        padding-right: 200px;
+    } */
 
     .page-header {
         margin: 20px 0;

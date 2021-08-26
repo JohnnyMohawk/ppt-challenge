@@ -44,7 +44,7 @@ The People, Places & Things app is deployed [HERE]()
 * [MCDatepicker](https://www.npmjs.com/package/mc-datepicker)
 * [Google Fonts](https://fonts.google.com/)
 
-## Authors
+## Author
 
 **John Nelson-Alden**
 
