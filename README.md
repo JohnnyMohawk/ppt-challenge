@@ -23,25 +23,26 @@ Let’s get started!
 
 <img src="main_app/static/images/complete-challenge-table-ss.png" width=100% height=auto>
 
-<img src="" width=100% height=auto>
-
-<img src="" width=100% height=auto>
-
-<img src="" width=100% height=auto>
-
-
 ## Getting Started
 
 The People, Places & Things app is deployed [HERE]()
 
-
 ## Built With
 
-<img src="" width=100% height=auto>
+<img src="main_app/static/images/django-python.png" width=100% height=auto>
 
-<img src="" width=100% height=auto>
+<img src="main_app/static/images/postgre-django.png" width=100% height=auto>
+
+<img src="main_app/static/images/html-css.jpeg" width=100% height=auto>
 
 * [Django](https://www.djangoproject.com/)
+* [Python](https://www.python.org/)
+* [PostgreSQL](https://www.postgresql.org/)
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+* [JavaScript](https://www.javascript.com/)
+* [MCDatepicker](https://www.npmjs.com/package/mc-datepicker)
+* [Google Fonts](https://fonts.google.com/)
 
 ## Authors
 
