@@ -25,7 +25,7 @@ Let’s get started!
 
 ## Getting Started
 
-The People, Places & Things app is deployed [HERE]()
+The People, Places & Things app is deployed [HERE](https://ppt-challenge.herokuapp.com/)
 
 ## Built With
 
