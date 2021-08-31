@@ -1,15 +1,15 @@
 <img src="main-app/../main_app/static/images/people-places-things-banner.png" width=100% height=auto>
 
-The People, Places & Things Challenge is a full-stack Django application designed to increase the users curiousity, network and foster an attitude of gratitude! 
+The People, Places & Things Challenge is a full-stack Django application designed to increase the users curiosity, network and foster an attitude of gratitude! 
 
 ## About
 
 The People, Places & Things Challenge, asks the user to document their passing thoughts and ideas. The ones that normally get lost in the fray of our daily lives. We all have the, “I’d really like to know more about ‘X’”, or “I should really reach out to ‘Y’” moments. But when we finally do have some free time, we have entirely forgotten about these thoughts. Having a place for these ideas to live and hangout with each other, gives them the potential to grow, evolve and become actions! 
 
 People, Places & Things is not just a notepad or glorified todo list, it is designed to actually foster generation of new ideas and boost your creativity. In science talk.. the goal is to increase the neuroplasticity of your brain by creating new connections via increased neural synapses. It is known that neuroplasticity is 
-capable of generation and regeneration throughout our lives, given the right stimuli. This stimuli can be anything. This challenge is designed to stimulate the user's brain and boost their desire to learn, travel, connect and live in gratitude. 
+capable of generation and regeneration throughout our lives, given the right stimuli. These stimuli can be anything. This challenge is designed to stimulate the user's brain and boost their desire to learn, travel, connect and live in gratitude. 
 
-Each day a user decides to do a PPT challenge, they will simply be asked for a bit of information on three different subjects.. you guessed: People, places and things. This process is extremely simple, but it will get the brain firing and the app will automatically save the documented responses. Documenting ones thoughts is the first step to turning them in to reality. 
+Each day a user decides to do a PPT challenge, they will simply be asked for a bit of information on three different subjects.. you guessed it: People, places and things. This process is extremely simple, but it will get the brain firing and the app will automatically save the documented responses. Documenting one's thoughts is the first step to turning them into reality. 
 
 Let’s get started!
 
